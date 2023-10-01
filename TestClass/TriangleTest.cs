@@ -81,4 +81,55 @@ namespace TriangleTest
         }
 
     }
+    public class TriangleScalene
+    {
+        [Test]
+        public void AnalyzeTriangle_Input3and4and5_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 3;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string expected = "A triangle is formed and it is a SCALENE";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input5and7and10_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 5;
+            int secondSide = 7;
+            int thirdSide = 10;
+
+            string expected = "A triangle is formed and it is a SCALENE";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input4and5and8_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 4;
+            int secondSide = 5;
+            int thirdSide = 8;
+
+            string expected = "A triangle is formed and it is a SCALENE";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+    }
 }
