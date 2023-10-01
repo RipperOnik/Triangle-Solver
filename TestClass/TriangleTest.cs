@@ -132,5 +132,43 @@ namespace TriangleTest
             // Assert 
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void AnalyzeTriangle_Input6and7and9_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 6;
+            int secondSide = 7;
+            int thirdSide = 9;
+
+            string expected = "A triangle is formed and it is a SCALENE";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
+
+        [Test]
+        public void AnalyzeTriangle_Input13and12and14_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 13;
+            int secondSide = 12;
+            int thirdSide = 14;
+
+            string expected = "A triangle is formed and it is a SCALENE";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
     }
+
+    
 }
