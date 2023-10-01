@@ -81,6 +81,7 @@ namespace TriangleTest
         }
 
     }
+    [TestFixture]
     public class TriangleScalene
     {
         [Test]
