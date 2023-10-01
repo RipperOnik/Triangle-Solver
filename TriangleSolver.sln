@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleSolver", "TriangleSolver\TriangleSolver.csproj", "{E91297F3-BEAC-4D77-8BEF-B6DA0646079E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClass", "TestClass\TestClass.csproj", "{CB9CC0F2-C32C-4038-B9B1-039E34516DCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTest", "TestClass\TriangleTest.csproj", "{CB9CC0F2-C32C-4038-B9B1-039E34516DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
