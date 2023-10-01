@@ -169,6 +169,60 @@ namespace TriangleTest
         }
 
     }
+    [TestFixture]
+    public class TriangleZeroLength
+    {
 
-    
+        [Test]
+        public void AnalyzeTriangle_Input0and1and2_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 0;
+            int secondSide = 1;
+            int thirdSide = 2;
+
+            string expected = "INVALID triangle - a zero was entered";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input0and0and2_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 0;
+            int secondSide = 0;
+            int thirdSide = 2;
+
+            string expected = "INVALID triangle - a zero was entered";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input0and0and0_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 0;
+            int secondSide = 0;
+            int thirdSide = 0;
+
+            string expected = "INVALID triangle - a zero was entered";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+    }
+
 }
