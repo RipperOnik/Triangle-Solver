@@ -224,5 +224,58 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
     }
+    [TestFixture]
+    public class TriangleInvalidResponse
+    {
+        [Test]
+        public void AnalyzeTriangle_Input1and2and3_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 1;
+            int secondSide = 2;
+            int thirdSide = 3;
+
+            string expected = "A triangle is not formed based on the input values";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input2and3and6_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 6;
+
+            string expected = "A triangle is not formed based on the input values";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input4and5and10_OutputSCALENE()
+        {
+            // Arrange
+            int firstSide = 4;
+            int secondSide = 5;
+            int thirdSide = 10;
+
+            string expected = "A triangle is not formed based on the input values";
+
+            // Act 
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert 
+            Assert.AreEqual(expected, actual);
+        }
+    }
 
 }
